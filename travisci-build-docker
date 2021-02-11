@@ -6,7 +6,7 @@ compiler:
 services:
   - docker
 before_install:
-  - docker login -u christiankm01 -p Danang-111
-  - docker build -t christiankm01/master:44 .
-  - docker push christiankm01/master:44
-  - docker run christiankm01/master:44
+  - docker login -u christiankm01 -p Danang-112
+  - docker build -t christiankm01/master:45
+  - docker push christiankm01/master:45
+  - docker run christiankm01/master:45
