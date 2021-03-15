@@ -5,8 +5,8 @@ compiler:
   - gcc
 services:
   - docker
+env:
+  - TEST=/master/latest
+  - TEST=/master/push
 before_install:
-  - docker login -u christiankm01 -p Danang-112
-  - docker build -t christiankm01/master:45
-  - docker push christiankm01/master:45
-  - docker run christiankm01/master:45
+  - ls
